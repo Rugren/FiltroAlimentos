@@ -1,11 +1,9 @@
 # FiltroAlimentos
- Creación de un filtro que ordena de menor a mayor (y viceversa) números y palabras. En este caso por nombre de Alimentos y por número de Calorías, Glúcidos (Carbohidratos) y Proteínas.
-
-Además de por orden alfabético las letras o palabras (de A-Z y Z-A) del nombre de los productos que contienen estas calorías, grasas, etc.
+ Creación de un filtro que ordena de menor a mayor (y viceversa) números y palabras (A-Z y Z-A). En este caso por nombre de Alimentos y también por número de Calorías, Glúcidos (Carbohidratos) y Proteínas.
 
 Solo se podrá probar un filtro a la vez, no varios filtros de filtros realizados.
 
-Proyecto **FiltroAlimentos**, realizado en Angular
+Proyecto **FiltroAlimentos**, realizado en Angular.
 
 - 1º Para abrir este proyecto debemos tener instalado Angular en nuestro programa editor de código (Ya sea VisualStudioCode o el que utilicemos para correr el programa).
 Para instalar Angular poner comando (en la consola de Windows; Windws + R): npm install -g @angular/cli
@@ -20,8 +18,8 @@ Para instalar Angular poner comando (en la consola de Windows; Windws + R): npm 
 - 3º Ejecutar comando en la consola para abrirlo en nuestro servidor local: ng serve -o
 
 [ Cosas creadas necesarias para el funcionamiento: 
-- Ya creamos un componente llamado "filtros"
-- Instalamos material de Angular (Con comando: npm install @angular/material @angular/cdk) para que funcione (el LiveAnnouncer, MatSort, MatTableDataSource, Sort).
+- Ya creamos un componente llamado "filtros" (Con comando: ng g c filtros )
+- Instalamos material de Angular (Con comando: npm install @angular/material @angular/cdk ) para que funcione (el LiveAnnouncer, MatSort, MatTableDataSource, Sort).
 ]
 
 <hr>
