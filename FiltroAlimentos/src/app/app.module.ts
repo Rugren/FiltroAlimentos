@@ -13,11 +13,9 @@ import { A11yModule } from '@angular/cdk/a11y';
 @NgModule({
     declarations: [
         AppComponent,
-        // FiltrosComponent
+        // FiltrosComponent // Este dejar comentado para que funcione.
     ],
-    providers: [
-    // provideClientHydration(), // Lo tenía en el otro proyecto, ver si aquí influye
-    ],
+    providers: [],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
