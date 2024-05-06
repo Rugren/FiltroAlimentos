@@ -4,17 +4,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FiltrosComponent } from './filtros/filtros.component';
+import { bootstrapApplication } from '@angular/platform-browser';
+
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { A11yModule } from '@angular/cdk/a11y';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FiltrosComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        // FiltrosComponent
+    ],
+    providers: [
+    // provideClientHydration(), // Lo tenía en el otro proyecto, ver si aquí influye
+    ],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatTableModule,
+        MatSortModule,
+        A11yModule,
+        // Si quito FiltrosComponent, en app.component.html no lee el <app-filtros> 
+        FiltrosComponent 
+    ]
 })
 export class AppModule { }
